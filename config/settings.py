@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import dj_database_url
 import os
 from pathlib import Path
 
@@ -140,3 +141,7 @@ REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
 
 }
+
+
+DATABASES['default'] = dj_database_url.parse(
+    'postgres://zwpwzkbqewwrga:2924ce6e13702365db1f0cf091780d996f33a781b1fe96dc3d8d2faf0a0c9b10@ec2-54-198-252-9.compute-1.amazonaws.com:5432/dc5r6ud6rp61h0', conn_max_age=600)
