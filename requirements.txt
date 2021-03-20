@@ -1,5 +1,4 @@
 asgiref==3.3.1
-autopep8 @ file:///home/conda/feedstock_root/build_artifacts/autopep8_1615918605177/work
 certifi==2020.12.5
 chardet==4.0.0
 coreapi==2.3.3
